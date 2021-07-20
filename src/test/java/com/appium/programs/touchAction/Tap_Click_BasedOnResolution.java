@@ -25,6 +25,7 @@ public class Tap_Click_BasedOnResolution extends AppUtils
 		System.out.println("clickWidth "+clickWidth);
 		TouchAction action =new TouchAction(driver);
 		Thread.sleep(2000);
+		System.out.println("hi");
 		action.press(PointOption.point(clickWidth, clickHeight)).release().perform();
 		
 	
