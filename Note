@@ -1,0 +1,14 @@
+For FrameWork Creation Following points are important 
+
+Appium (For more caps details refer App Constants class)
+-----------------------------------------------
+1. appActivity , appPackage , deviceName , udid , platformName , platformVersion  are req'd commands and browserName capabilities  if used
+2. autoGrantPermissions : this desired cap helps to accept all device permissions when resetApp  used  
+3. unlockType , unlockKey capabilities  , if phone is locked and using code itself user has to open the lock to do this
+4. browserName : this caps helps to launch the browser , to do this driverversion and browser version should match
+5. for webApp user can inspect element using "chrome://inspect/#devices"  to do this user has to open appBrowser before
+6. to run app in background in android we use  : > driver.runAppInBackground(Duration.ofSeconds(3));
+
+****************************************************************
+
+TouchAction plays a vital role in Appium to perform click/tap , scroll (vertical or horizontal)
